@@ -20,11 +20,8 @@ SPDX-License-Identifier: MIT
 *************************************************************************************************/
 
 /** \brief Segundo trabajo práctico
- **
- ** Full file description
- **
  ** \addtogroup tp2 TPN2
- ** \brief Segundo práctico
+ ** \brief Este programa toma los datos de un alumno y los muestra por consola en un formato Json
  ** @{ */
 
 /* === Headers files inclusions =============================================================== */
@@ -47,6 +44,14 @@ SPDX-License-Identifier: MIT
 /* === Private function implementation ======================================================== */
 
 /* === Public function implementation ========================================================= */
+
+/**
+ * @brief Función principal del programa.
+ *
+ * Crea una estructura del tipo alumno_s y luego carga los campos con los datos del alumno.
+ * Implementa la funcion @ref Serializar y muestra la cadena generada, muestra un mensaje de error
+ * en caso de haberlo.
+ */
 int main(void)
 {
     char cadena[128];

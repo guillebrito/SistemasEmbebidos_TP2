@@ -19,12 +19,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 SPDX-License-Identifier: MIT
 *************************************************************************************************/
 
-/** \brief Declaraciones publicas del módulo de alumnos
- **
- ** \addtogroup alumno Alumnos
- ** \brief Módulo para gestión de alumnos
- ** @{ */
-
 /* === Headers files inclusions =============================================================== */
 
 #include "alumno.h"

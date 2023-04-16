@@ -40,21 +40,38 @@ extern "C"
     /* === Public macros definitions ============================================================*/
 
 #include <stdint.h>
+/**
+ * @brief tamaño de los campos de texto
+ *
+ * Este parametro define el tamaño de los campos de texto de la estructura @ref alumno_s
+ */
 #define FIELD_SIZE 50
 
     /* === Public data type declarations ========================================================*/
 
+    /**
+     * @brief Declaración de un tipo de datos struct para almacenar los datos de un alumno
+     *
+     *Esto declara un tipo de dato @b alumno_t con la forma del struct @ref alumno_s
+     */
     typedef struct alumno_s
     {
-        char apellido[FIELD_SIZE];
-        char nombre[FIELD_SIZE];
-        uint32_t documento;
+        char apellido[FIELD_SIZE]; //!< Almacena el apellido del alumno en una cadena
+        char nombre[FIELD_SIZE];   //!< Almacena el nombre del alumno en una cadena
+        uint32_t documento;        //!< Almacena el documento del alumno en una entero de 32 bit
     } const * alumno_t;
 
     /* === Public variable declarations =========================================================*/
 
     /* === Public function declarations =========================================================*/
 
+    /**
+     * @brief Función para serializar los datos de un alumno
+     * @param alumno Puntero a la estructura con los datos del alumno
+     * @param cadena Puntero a la cadena generada
+     * @param espacio Espacio disponible en la cadena generada
+     * @return int Retorna tamaño de la cadena generada, en caso de espacio insuficiente retorna -1
+     */
     int Serializar(alumno_t alumno, char cadena[], uint32_t espacio);
 
     /* === End of documentation =================================================================*/
